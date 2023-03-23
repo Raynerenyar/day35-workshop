@@ -1,0 +1,9 @@
+<div>
+    <table *ngIf="games">
+        <ng-container *ngFor="let game of games">
+            <tr>
+                <td>{{ game.name }}</td>
+            </tr>
+        </ng-container>
+    </table>
+</div>

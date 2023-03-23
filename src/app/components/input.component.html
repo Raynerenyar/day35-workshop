@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="left">
+        Games per page:
+    </div>
+    <form [formGroup]="inputForm">
+        <div class="right">
+            <select formControlName="num">
+                <ng-container *ngFor="let num of NUM_GAMES_PER_PAGE">
+                    <option [ngValue]="num" >{{ num }}</option>
+                </ng-container>
+            </select>
+        </div>
+    </form>
+</div>
+<app-games></app-games>
+<div *ngIf="games">
+    <button (click)="previous()">Previous</button>
+    <button (click)="next()">Next</button>
+</div>

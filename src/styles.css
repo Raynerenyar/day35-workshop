@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+.container {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* width: max-content; */
+    flex-direction: row;
+}
+.container:first-child{
+    width: 500px;
+}
+
+.container>*{
+    flex: 0 auto;
+}
+
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    margin: 10px;
+}
+
+.left {
+    justify-content: left;
+    width: 200px;
+}
+
+.right {
+    justify-content: right;
+}
