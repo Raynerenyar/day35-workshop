@@ -30,7 +30,6 @@ export class InputComponent implements OnInit, OnDestroy {
 
     this.inputFormSub$ = this.inputForm.valueChanges.subscribe(
       (resp) => {
-        console.log(resp)
         this.gameSvc.limit = resp.num
         this.gameSvc.onGettingsGames.next(true)
       }

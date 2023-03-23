@@ -43,7 +43,6 @@ export class GameService implements OnDestroy {
             .pipe(
                 map((serverResp: any) => {
                     let result = serverResp.games
-                    console.log(result)
                     return result
                 })
             )
